@@ -1,0 +1,184 @@
+/* Reset & Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Navigation Header */
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #0c1b49;
+}
+
+.main-nav img {
+  width: 120px;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.main-nav li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Hero Banner */
+.hero-banner {
+  background-image: url('images/banner-bg.jpg');
+  background-size: cover;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-banner h1 {
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.hero-banner span {
+  display: inline-block;
+  margin: 10px;
+  padding: 8px 16px;
+  background-color: #ffdd57;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.hero-banner button {
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Testimonials */
+.testimonials, .mentor-grid {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.mentors figure {
+  margin: 20px;
+  display: inline-block;
+}
+
+.mentors img {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.mentors figcaption {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* Tutorial Cards */
+.tutorials .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.card {
+  width: 300px;
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Membership */
+.membership {
+  background-color: #0c1b49;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.membership ul {
+  list-style: none;
+  margin: 20px auto;
+  padding: 0;
+  max-width: 600px;
+}
+
+.membership li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.membership button {
+  margin-top: 20px;
+  padding: 14px 32px;
+  font-size: 1rem;
+  background-color: #ffdd57;
+  color: #0c1b49;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* FAQs */
+.faq {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.faq details {
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  background-color: #f0f0f0;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+footer img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+footer i {
+  margin: 0 10px;
+  font-size: 1.2rem;
+  color: #0c1b49;
+}
