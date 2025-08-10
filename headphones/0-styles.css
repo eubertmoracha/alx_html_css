@@ -1,0 +1,177 @@
+/* Reset and variables */
+:root {
+  --primary-color: #ff6565;
+  --max-width: 1000px;
+  --font-main: 'Source Sans Pro', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  color: #fff;
+  background-color: #000;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+.site-header {
+  padding: 1rem 0;
+  background-color: transparent;
+}
+
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.logo span {
+  font-family: 'Spin Cycle OT', cursive;
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+}
+
+.main-nav a:hover,
+.main-nav a:active {
+  color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+  background: url('assets/images/headphones_hero_1.jpg') no-repeat center center/cover;
+  text-align: center;
+  padding: 5rem 1rem;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.cta:hover,
+.cta:active {
+  opacity: 0.9;
+}
+
+.hero-description {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Custom font */
+@font-face {
+  font-family: 'Spin Cycle OT';
+  src: url('assets/holberton_school-icon/fonts/holberton_school-icon.eot') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Hide checkbox */
+.menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+  .hamburger {
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 10;
+  }
+
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    left: 1rem;
+    background-color: #000;
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  /* Show menu when checkbox is checked */
+  .menu-toggle:checked ~ .main-nav {
+    display: block;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p,
+  .hero-description {
+    font-size: 1rem;
+  }
+}
